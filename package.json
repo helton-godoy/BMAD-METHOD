@@ -27,6 +27,8 @@
     "bmad:agent-install": "node tools/cli/bmad-cli.js agent-install",
     "bmad:install": "node tools/cli/bmad-cli.js install",
     "bmad:status": "node tools/cli/bmad-cli.js status",
+    "bmad:workflow": "node scripts/bmad/bmad-workflow.js",
+    "bmad:gatekeeper": "node scripts/bmad/bmad-gatekeeper.js",
     "bundle": "node tools/cli/bundlers/bundle-web.js all",
     "flatten": "node tools/flattener/main.js",
     "format:check": "prettier --check \"**/*.{js,cjs,mjs,json,md,yaml}\"",
@@ -61,6 +63,8 @@
     ]
   },
   "dependencies": {
+    "@octokit/rest": "^20.0.0",
+    "dotenv": "^16.4.5",
     "@kayvan/markdown-tree-parser": "^1.6.1",
     "boxen": "^5.1.2",
     "chalk": "^4.1.2",
